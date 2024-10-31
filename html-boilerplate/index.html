@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web-Page</title>
+</head>
+
+<body>
+    <h1> Getting started with GitHub Actions</h1>
+    <!--An HTML comment-->
+    <p>Before we start playing with <strong>GitHub Actions</strong>, let's have a look at what they are and how do they
+        work.</p>
+
+    <p>GitHub Actions work on a basis of <em>workflows</em>. A workflow is a series of jobs that are run when a certain
+        triggering
+        event happens. The jobs that are run then themselves contain instructions for what GitHub Actions should do.</p>
+
+    <p>A typical execution of a workflow looks like this:</p>
+
+    <p>
+        <ul>
+            <li>Triggering event happens (for example, there is a push to the main branch).</li>
+            <li>The workflow with that trigger is executed.</li>
+            <li>Cleanup</li>
+        </ul>
+    </p>
+
+    <p>
+        <h3>Basic needs</h3>
+        In general, to have CI operate on a repository, we need a few things:
+        <ol>
+            <li>A repository (obviously)</li>
+            <li>Some definition of what the CI needs to do: This can be in the form of a specific file inside the repository or it can be defined in the CI system</li>
+            <li>The CI needs to be aware that the repository (and the configuration file within it) exist</li>
+            <li>The CI needs to be able to access the repository</li>
+            <li>The CI needs permissions to perform the actions it is supposed to be able to do: For example, if the CI needs to be able to deploy to a production environment, it needs credentials for that environment.</li>
+        </ol>
+    </p>
+
+</body>
+
+</html>
