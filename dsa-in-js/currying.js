@@ -3,4 +3,4 @@ function multiply(a){
         return a * b
     }
 }
-console.log
+console.log(multiply(4)(6))
