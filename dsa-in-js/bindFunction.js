@@ -1,10 +1,11 @@
 function fullName(){
-    return `Hello, this is ${this.first} ${this.last}` 
+    return "Hello, this is "+ this.first +" "+ this.last  
 }
 
 console.log(fullName())
 
-const person = {
+var person = {
     first : "Jeffrey",
     last : "Dev"
 }
+console.log(fullName.bind(person)())
