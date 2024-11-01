@@ -3,3 +3,8 @@ function fullName(){
 }
 
 console.log(fullName())
+
+const person = {
+    first : "Jeffrey",
+    last : "Dev"
+}
