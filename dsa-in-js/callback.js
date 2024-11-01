@@ -9,3 +9,12 @@ modifyArray(arr, function(){
 
 const a = 0.1 + 0.2 === 0.3
 console.log(`Output of a = ${a}`)
+
+function func(){
+    var priv = "secret code"
+    return function(){
+        return priv
+    }
+}
+var getPriv = func();
+console.log(func()())
