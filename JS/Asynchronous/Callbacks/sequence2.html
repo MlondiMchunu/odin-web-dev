@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Control</title>
+</head>
+
+<body>
+    <form action="#">
+
+        <label>First Number</label>
+        <input type="text" id="first" />
+        <br> <br>
+        <label>Second Number</label>
+        <input type="text" id="second" />
+        <br> <br>
+        <label id="result"></label>
+        <br> <br>
+        <button id="calculate">Calculate</button>
+    </form>
+    <script>
+        let calBtn = document.querySelector("#calculate")
+        calBtn.addEventListener('click', (e) => {
+
+            e.preventDefault()
+
+            let a = parseInt(document.querySelector("#first").value)
+            let b = parseInt(document.querySelector("#second").value)
+
+            function calC(x,y){
+                let sum = a + b
+                return sum
+            }
+            function print(sum){
+                document.getElementById("result").innerHTML = sum
+            }
+            let result = calC(a,b)
+            print(result)
+
+        })
+    </script>
+</body>
+
+</html>
